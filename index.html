@@ -53,24 +53,24 @@
   .site-header-inner{
     max-width:var(--container);
     margin:0 auto;
-    padding:0 13px 0 20px;
+    padding:0 20px;
     display:flex;
+    flex-direction:column;
     align-items:center;
-    gap:16px;
+    gap:8px;
   }
   .site-logo-group{display:flex; align-items:center; gap:8px; flex:none;}
   .site-logo-group .logo-affordable{height:16px; width:auto; display:block;}
   .site-logo-group .logo-divider{width:1px; height:20px; background:rgba(22,35,58,0.18); flex:none;}
   .site-logo-group .logo-leafguard{height:20px; width:auto; display:block;}
   .header-badge{
-    flex:1;
     display:flex;
-    flex-direction:column;
     align-items:center;
-    text-align:center;
+    justify-content:center;
+    gap:4px;
     color:#1AB277;
     font-weight:800;
-    font-size:1.05rem;
+    font-size:1rem;
     line-height:1.25;
     letter-spacing:0.01em;
     white-space:nowrap;
@@ -246,7 +246,7 @@
     .hero h1 .h1-mobile{display:none;}
     .hero h1 .h1-desktop{display:inline;}
     .hero-bullets{display:flex; align-items:flex-start;}
-    .site-header-inner{display:flex; justify-content:center; padding:0 20px;}
+    .site-header-inner{display:flex; flex-direction:row; justify-content:center; padding:0 20px;}
     .site-logo-group{gap:20px;}
     .site-logo-group .logo-affordable{height:28px;}
     .site-logo-group .logo-divider{height:38px;}
