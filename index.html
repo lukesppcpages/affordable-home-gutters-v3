@@ -55,26 +55,13 @@
     margin:0 auto;
     padding:0 20px;
     display:flex;
-    flex-direction:column;
+    justify-content:center;
     align-items:center;
-    gap:8px;
   }
   .site-logo-group{display:flex; align-items:center; gap:8px; flex:none;}
   .site-logo-group .logo-affordable{height:20px; width:auto; display:block;}
   .site-logo-group .logo-divider{width:1px; height:24px; background:rgba(22,35,58,0.18); flex:none;}
   .site-logo-group .logo-leafguard{height:24px; width:auto; display:block;}
-  .header-badge{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:4px;
-    color:#1AB277;
-    font-weight:800;
-    font-size:1rem;
-    line-height:1.25;
-    letter-spacing:0.01em;
-    white-space:nowrap;
-  }
   .promo-bar{
     background:var(--royal-dark);
     color:var(--white);
@@ -139,6 +126,13 @@
     font-weight:700;
   }
   .hero-bullets li svg{flex:none; width:22px; height:22px;}
+  .hero-subnote{
+    margin:16px 0 0;
+    color:var(--white);
+    font-weight:400;
+    font-size:1rem;
+    white-space:nowrap;
+  }
   .hero-form-col{display:flex; justify-content:center;}
 
   /* ============ FORM CARD ============ */
@@ -246,12 +240,11 @@
     .hero h1 .h1-mobile{display:none;}
     .hero h1 .h1-desktop{display:inline;}
     .hero-bullets{display:flex; align-items:flex-start;}
-    .site-header-inner{display:flex; flex-direction:row; justify-content:center; padding:0 20px;}
+    .hero-subnote{display:none;}
     .site-logo-group{gap:20px;}
     .site-logo-group .logo-affordable{height:28px;}
     .site-logo-group .logo-divider{height:38px;}
     .site-logo-group .logo-leafguard{height:36px;}
-    .header-badge{display:none;}
     .form-wrap{margin-top:0;}
     .quote-card{max-width:600px;}
   }
@@ -368,7 +361,6 @@
       <span class="logo-divider"></span>
       <img src="img/logo-leafguard.svg" alt="Leafguard" class="logo-leafguard" />
     </div>
-    <div class="header-badge"><span>CLOG-FREE</span><span>GUARANTEE*</span></div>
   </div>
 </header>
 <div class="promo-bar">
@@ -392,6 +384,7 @@
           <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" fill="rgba(255,255,255,0.15)" stroke="#8DD8BB" stroke-width="1.4"/><path d="M5 8.2l2 2 4-4.4" stroke="#8DD8BB" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Lifetime Warranty</li>
           <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" fill="rgba(255,255,255,0.15)" stroke="#8DD8BB" stroke-width="1.4"/><path d="M5 8.2l2 2 4-4.4" stroke="#8DD8BB" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Made In the USA</li>
         </ul>
+        <p class="hero-subnote">Clog-Free Guarantee*</p>
       </div>
 
       <div class="hero-form-col">
