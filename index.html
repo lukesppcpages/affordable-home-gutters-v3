@@ -101,12 +101,8 @@
   .hero-copy{text-align:center;}
   .hero h1{
     color:var(--white);
-    font-size:clamp(33px, calc(12.7vw - 7.6px), 2.5rem);
+    font-size:clamp(25px, calc(10.9vw - 9.9px), 31px);
     line-height:1.2;
-  }
-  .hero h1 .h1-desktop{
-    font-style:normal;
-    display:none;
   }
   .hero-bullets{
     list-style:none;
@@ -237,8 +233,6 @@
     .hero-grid{grid-template-columns:1fr 1.1fr; gap:40px;}
     .hero-copy{text-align:left;}
     .hero h1{font-size:clamp(2.1rem, 3.2vw, 2.6rem);}
-    .hero h1 .h1-mobile{display:none;}
-    .hero h1 .h1-desktop{display:inline;}
     .hero-bullets{display:flex; align-items:flex-start;}
     .hero-subnote{display:none;}
     .site-logo-group{gap:20px;}
@@ -276,6 +270,18 @@
   .proof-item h3{margin-top:16px; font-size:1.05rem;}
   .proof-item p{margin-top:8px; color:var(--ink-soft); font-size:0.92rem; line-height:1.5;}
   @media (min-width:700px){.proof-grid{grid-template-columns:repeat(3, 1fr);}}
+
+  /* ============ PARTNER ============ */
+  .partner-section{background:var(--royal-dark); padding:60px 0;}
+  .partner-grid{display:grid; grid-template-columns:1fr; gap:36px;}
+  .partner-copy h2{color:var(--white); font-size:clamp(1.6rem, 3.2vw, 2.1rem); max-width:520px;}
+  .partner-copy p{margin-top:14px; color:rgba(255,255,255,0.75); font-size:1rem; line-height:1.6; max-width:480px;}
+  .partner-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:16px;}
+  .partner-list li{display:flex; align-items:flex-start; gap:12px; color:var(--white); font-size:0.98rem; font-weight:600; line-height:1.4;}
+  .partner-list li svg{flex:none; width:20px; height:20px; margin-top:2px;}
+  @media (min-width:900px){
+    .partner-grid{grid-template-columns:1fr 1fr; align-items:center; gap:48px;}
+  }
 
   /* ============ REVIEWS ============ */
   .reviews-section{background:var(--royal-dark); padding:60px 0;}
@@ -367,7 +373,7 @@
   <p>75% OFF INSTALLATION + SAVE AN EXTRA $200 TODAY</p>
 </div>
 <div class="promo-bar-secondary">
-  <p>Now Offering Extended Financing &mdash; 9 to 18 Months 0% Interest*</p>
+  <p>For a Limited Time Get 0% Financing*</p>
 </div>
 
 <section class="hero" id="top">
@@ -377,7 +383,7 @@
   <div class="container">
     <div class="hero-grid">
       <div class="hero-copy">
-        <h1><span class="h1-mobile">Say Goodbye To Gutter Cleaning</span><span class="h1-desktop">Say Goodbye to Gutter Cleaning With Maintenance-Free Gutter Protection</span></h1>
+        <h1>Save On Leafguard&rsquo;s Clog-Free Gutters</h1>
         <ul class="hero-bullets">
           <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" fill="rgba(255,255,255,0.15)" stroke="#8DD8BB" stroke-width="1.4"/><path d="M5 8.2l2 2 4-4.4" stroke="#8DD8BB" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Clog-Free Guarantee</li>
           <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" fill="rgba(255,255,255,0.15)" stroke="#8DD8BB" stroke-width="1.4"/><path d="M5 8.2l2 2 4-4.4" stroke="#8DD8BB" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Maintenance-Free</li>
@@ -498,7 +504,7 @@
 <section class="quality-section">
   <div class="container">
     <div class="quality-heading">
-      <h2>Quality You Can Trust</h2>
+      <h2>Leafguard Means Quality You Can Trust</h2>
     </div>
     <div class="quality-grid">
       <div class="quality-item">
@@ -521,7 +527,7 @@
 
 <section class="reviews-section">
   <div class="reviews-heading">
-    <h2>500,000+ Happy Customers</h2>
+    <h2>Join Their 500,000+ Happy Customers</h2>
   </div>
   <div class="reviews-track">
     <div class="review-card">
@@ -583,6 +589,24 @@
         <h3>500,000+ Happy Customers</h3>
         <p>Join the hundreds of thousands of homeowners who trust us to protect their homes.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="partner-section">
+  <div class="container">
+    <div class="partner-grid">
+      <div class="partner-copy">
+        <h2>Why We Partnered With Leafguard</h2>
+        <p>Leafguard isn&rsquo;t just another gutter guard &mdash; it&rsquo;s a patented, seamless one-piece system built to outperform anything else on the market. As an official Leafguard partner, Affordable Home connects homeowners in our network with exclusive pricing and financing you won&rsquo;t find anywhere else.</p>
+      </div>
+      <ul class="partner-list">
+        <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="rgba(255,255,255,0.1)" stroke="#8DD8BB" stroke-width="1.4"/><path d="M6 10.2l2.5 2.5 5-5.5" stroke="#8DD8BB" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>One-piece, seamless design &mdash; no separate guards or screens to clog, sag, or fall off</li>
+        <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="rgba(255,255,255,0.1)" stroke="#8DD8BB" stroke-width="1.4"/><path d="M6 10.2l2.5 2.5 5-5.5" stroke="#8DD8BB" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Backed by a lifetime, transferable clog-free guarantee</li>
+        <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="rgba(255,255,255,0.1)" stroke="#8DD8BB" stroke-width="1.4"/><path d="M6 10.2l2.5 2.5 5-5.5" stroke="#8DD8BB" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Tested to handle up to 32 inches of rain per hour</li>
+        <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="rgba(255,255,255,0.1)" stroke="#8DD8BB" stroke-width="1.4"/><path d="M6 10.2l2.5 2.5 5-5.5" stroke="#8DD8BB" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Installs on your fascia, never under your shingles &mdash; so it won&rsquo;t void your roof warranty</li>
+        <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="rgba(255,255,255,0.1)" stroke="#8DD8BB" stroke-width="1.4"/><path d="M6 10.2l2.5 2.5 5-5.5" stroke="#8DD8BB" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Exclusive savings and financing available only through our partner network</li>
+      </ul>
     </div>
   </div>
 </section>
