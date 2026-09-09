@@ -82,7 +82,7 @@
   }
   .promo-bar-secondary p{
     font-weight:700;
-    font-size:clamp(0.78rem, 2vw, 0.9rem);
+    font-size:clamp(0.95rem, 2.4vw, 1.15rem);
     letter-spacing:0.01em;
   }
 
@@ -232,8 +232,10 @@
     .hero .container{width:100%;}
     .hero-grid{grid-template-columns:1fr 1.1fr; gap:40px;}
     .hero-copy{text-align:left;}
-    .hero h1{font-size:clamp(2.1rem, 3.2vw, 2.6rem);}
-    .hero-bullets{display:flex; align-items:flex-start;}
+    .hero h1{font-size:clamp(2.5rem, 3.8vw, 3.1rem);}
+    .hero-bullets{display:flex; align-items:flex-start; gap:14px;}
+    .hero-bullets li{font-size:1.45rem;}
+    .hero-bullets li svg{width:26px; height:26px;}
     .hero-subnote{display:none;}
     .site-logo-group{gap:20px;}
     .site-logo-group .logo-affordable{height:28px;}
@@ -274,6 +276,10 @@
   /* ============ PARTNER ============ */
   .partner-section{background:var(--royal-dark); padding:60px 0;}
   .partner-grid{display:grid; grid-template-columns:1fr; gap:36px;}
+  .partner-logo-group{display:flex; align-items:center; gap:12px; margin-bottom:20px;}
+  .partner-logo-group .logo-affordable{height:22px; width:auto; display:block;}
+  .partner-logo-group .logo-divider{width:1px; height:26px; background:rgba(255,255,255,0.25); flex:none;}
+  .partner-logo-group .logo-leafguard{height:26px; width:auto; display:block;}
   .partner-copy h2{color:var(--white); font-size:clamp(1.6rem, 3.2vw, 2.1rem); max-width:520px;}
   .partner-copy p{margin-top:14px; color:rgba(255,255,255,0.75); font-size:1rem; line-height:1.6; max-width:480px;}
   .partner-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:16px;}
@@ -597,6 +603,11 @@
   <div class="container">
     <div class="partner-grid">
       <div class="partner-copy">
+        <div class="partner-logo-group">
+          <img src="img/logo-affordable-home-white.svg" alt="Affordable Home" class="logo-affordable" />
+          <span class="logo-divider"></span>
+          <img src="img/logo-leafguard-white.svg" alt="Leafguard" class="logo-leafguard" />
+        </div>
         <h2>Why We Partnered With Leafguard</h2>
         <p>Leafguard isn&rsquo;t just another gutter guard &mdash; it&rsquo;s a patented, seamless one-piece system built to outperform anything else on the market. As an official Leafguard partner, Affordable Home connects homeowners in our network with exclusive pricing and financing you won&rsquo;t find anywhere else.</p>
       </div>
