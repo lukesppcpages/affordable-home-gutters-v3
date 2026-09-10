@@ -55,13 +55,22 @@
     margin:0 auto;
     padding:0 20px;
     display:flex;
-    justify-content:center;
+    justify-content:space-between;
     align-items:center;
+    gap:16px;
   }
-  .site-logo-group{display:flex; align-items:center; gap:8px; flex:none;}
-  .site-logo-group .logo-affordable{height:24px; width:auto; display:block;}
-  .site-logo-group .logo-divider{width:1px; height:28px; background:rgba(22,35,58,0.18); flex:none;}
-  .site-logo-group .logo-leafguard{height:28px; width:auto; display:block;}
+  .site-logo-affordable{height:30px; width:auto; display:block;}
+  .site-leafguard-group{display:flex; flex-direction:column; align-items:flex-end;}
+  .site-logo-leafguard{height:22px; width:auto; display:block;}
+  .site-leafguard-caption{
+    margin-top:3px;
+    color:#1AB277;
+    font-weight:700;
+    font-size:0.68rem;
+    letter-spacing:0.04em;
+    text-transform:uppercase;
+    white-space:nowrap;
+  }
   .promo-bar{
     background:var(--royal-dark);
     color:var(--white);
@@ -237,10 +246,9 @@
     .hero-bullets li{font-size:1.45rem;}
     .hero-bullets li svg{width:26px; height:26px;}
     .hero-subnote{display:none;}
-    .site-logo-group{gap:20px;}
-    .site-logo-group .logo-affordable{height:28px;}
-    .site-logo-group .logo-divider{height:38px;}
-    .site-logo-group .logo-leafguard{height:36px;}
+    .site-logo-affordable{height:40px;}
+    .site-logo-leafguard{height:30px;}
+    .site-leafguard-caption{font-size:0.78rem;}
     .form-wrap{margin-top:0;}
     .quote-card{max-width:600px;}
   }
@@ -459,10 +467,10 @@
 
 <header class="site-header">
   <div class="site-header-inner">
-    <div class="site-logo-group">
-      <img src="img/logo-affordable-home.svg" alt="Affordable Home" class="logo-affordable" />
-      <span class="logo-divider"></span>
-      <img src="img/logo-leafguard.svg" alt="Leafguard" class="logo-leafguard" />
+    <img src="img/logo-affordable-home.svg" alt="Affordable Home" class="site-logo-affordable" />
+    <div class="site-leafguard-group">
+      <img src="img/logo-leafguard.svg" alt="Leafguard" class="site-logo-leafguard" />
+      <span class="site-leafguard-caption">Official Partner</span>
     </div>
   </div>
 </header>
