@@ -282,6 +282,65 @@
   .partner-logo-group .logo-leafguard{height:26px; width:auto; display:block;}
   .partner-copy h2{color:var(--white); font-size:clamp(1.6rem, 3.2vw, 2.1rem); max-width:520px;}
   .partner-copy p{margin-top:14px; color:rgba(255,255,255,0.75); font-size:1rem; line-height:1.6; max-width:480px;}
+  .partner-offer{
+    position:relative;
+    margin-top:32px;
+    max-width:420px;
+    background:var(--white);
+    border:2px solid #1AB277;
+    border-radius:var(--radius-lg);
+    padding-top:16px;
+  }
+  .partner-offer-badge{
+    position:absolute;
+    top:-15px;
+    left:50%;
+    transform:translateX(-50%);
+    background:#FB4436;
+    color:var(--white);
+    font-weight:800;
+    font-size:0.72rem;
+    letter-spacing:0.04em;
+    text-transform:uppercase;
+    padding:8px 18px;
+    border-radius:999px;
+    white-space:nowrap;
+    box-shadow:0 8px 16px -8px rgba(0,0,0,0.4);
+  }
+  .partner-offer-body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:18px;
+    padding:16px 20px 22px;
+  }
+  .partner-offer-item{text-align:center;}
+  .partner-offer-value{font-size:1.9rem; font-weight:800; color:#1AB277; line-height:1; white-space:nowrap;}
+  .partner-offer-value span{font-size:1rem; color:var(--ink); font-weight:800;}
+  .partner-offer-label{margin-top:6px; font-size:0.72rem; font-weight:800; letter-spacing:0.04em; text-transform:uppercase; color:var(--ink-soft);}
+  .partner-offer-divider{
+    flex:none;
+    width:32px;
+    height:32px;
+    border-radius:50%;
+    background:#1AB277;
+    color:var(--white);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:800;
+    font-size:1.1rem;
+  }
+  .partner-offer-financing{
+    background:var(--royal-dark);
+    color:var(--white);
+    text-align:center;
+    font-weight:800;
+    font-size:0.85rem;
+    letter-spacing:0.01em;
+    padding:12px 16px;
+    border-radius:0 0 20px 20px;
+  }
   .partner-list{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:16px;}
   .partner-list li{display:flex; align-items:flex-start; gap:12px; color:var(--white); font-size:0.98rem; font-weight:600; line-height:1.4;}
   .partner-list li svg{flex:none; width:20px; height:20px; margin-top:2px;}
@@ -609,7 +668,22 @@
           <img src="img/logo-leafguard-white.svg" alt="Leafguard" class="logo-leafguard" />
         </div>
         <h2>Why We Partnered With Leafguard</h2>
-        <p>Leafguard isn&rsquo;t just another gutter guard &mdash; it&rsquo;s a patented, seamless one-piece system built to outperform anything else on the market. As an official Leafguard partner, Affordable Home connects homeowners in our network with exclusive pricing and financing you won&rsquo;t find anywhere else.</p>
+        <p>Leafguard isn&rsquo;t just another gutter guard &mdash; it&rsquo;s a patented, seamless one-piece system built to outperform anything else on the market.</p>
+        <div class="partner-offer">
+          <span class="partner-offer-badge">Limited-Time Offer</span>
+          <div class="partner-offer-body">
+            <div class="partner-offer-item">
+              <div class="partner-offer-value">75<span>%</span> <span>OFF</span></div>
+              <div class="partner-offer-label">Installation</div>
+            </div>
+            <div class="partner-offer-divider">+</div>
+            <div class="partner-offer-item">
+              <div class="partner-offer-value">$200 <span>OFF</span></div>
+              <div class="partner-offer-label">Your New System</div>
+            </div>
+          </div>
+          <div class="partner-offer-financing">Now offering 0% financing*</div>
+        </div>
       </div>
       <ul class="partner-list">
         <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="rgba(255,255,255,0.1)" stroke="#8DD8BB" stroke-width="1.4"/><path d="M6 10.2l2.5 2.5 5-5.5" stroke="#8DD8BB" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>One-piece, seamless design &mdash; no separate guards or screens to clog, sag, or fall off</li>
