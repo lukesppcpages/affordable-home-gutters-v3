@@ -276,12 +276,13 @@
   /* ============ PARTNER ============ */
   .partner-section{background:var(--royal-dark); padding:60px 0;}
   .partner-grid{display:grid; grid-template-columns:1fr; gap:36px;}
-  .partner-logo-group{display:flex; align-items:center; gap:12px; margin-bottom:20px;}
+  .partner-logo-group{display:flex; align-items:center; justify-content:center; gap:12px; margin-bottom:20px;}
   .partner-logo-group .logo-affordable{height:22px; width:auto; display:block;}
   .partner-logo-group .logo-divider{width:1px; height:26px; background:rgba(255,255,255,0.25); flex:none;}
   .partner-logo-group .logo-leafguard{height:26px; width:auto; display:block;}
-  .partner-copy h2{color:var(--white); font-size:clamp(1.6rem, 3.2vw, 2.1rem); max-width:520px;}
-  .partner-copy p{margin-top:14px; color:rgba(255,255,255,0.75); font-size:1rem; line-height:1.6; max-width:480px;}
+  .partner-copy h2{color:var(--white); font-size:clamp(1.6rem, 3.2vw, 2.1rem); max-width:520px; text-align:center; margin-left:auto; margin-right:auto;}
+  .partner-copy p{margin-top:14px; color:rgba(255,255,255,0.75); font-size:1rem; line-height:1.6; max-width:480px; text-align:center; margin-left:auto; margin-right:auto;}
+  .partner-cta{display:block; text-align:center; margin-top:32px;}
   .partner-offer{
     position:relative;
     margin-top:32px;
@@ -346,6 +347,13 @@
   .partner-list li svg{flex:none; width:20px; height:20px; margin-top:2px;}
   @media (min-width:900px){
     .partner-grid{grid-template-columns:1fr 1fr; align-items:center; gap:48px;}
+    .partner-logo-group{justify-content:flex-start;}
+    .partner-logo-group .logo-affordable{height:28px;}
+    .partner-logo-group .logo-divider{height:34px;}
+    .partner-logo-group .logo-leafguard{height:32px;}
+    .partner-copy h2{text-align:left; margin-left:0; margin-right:0;}
+    .partner-copy p{text-align:left; margin-left:0; margin-right:0;}
+    .partner-cta{display:none;}
   }
 
   /* ============ REVIEWS ============ */
@@ -667,7 +675,7 @@
           <span class="logo-divider"></span>
           <img src="img/logo-leafguard-white.svg" alt="Leafguard" class="logo-leafguard" />
         </div>
-        <h2>Why We Partnered With Leafguard</h2>
+        <h2>Why We Partnered With Leafguard Gutters</h2>
         <p>Leafguard isn&rsquo;t just another gutter guard &mdash; it&rsquo;s a patented, seamless one-piece system built to outperform anything else on the market.</p>
         <div class="partner-offer">
           <span class="partner-offer-badge">Limited-Time Offer</span>
@@ -690,8 +698,14 @@
         <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="rgba(255,255,255,0.1)" stroke="#8DD8BB" stroke-width="1.4"/><path d="M6 10.2l2.5 2.5 5-5.5" stroke="#8DD8BB" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Backed by a lifetime, transferable clog-free guarantee</li>
         <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="rgba(255,255,255,0.1)" stroke="#8DD8BB" stroke-width="1.4"/><path d="M6 10.2l2.5 2.5 5-5.5" stroke="#8DD8BB" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Tested to handle up to 32 inches of rain per hour</li>
         <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="rgba(255,255,255,0.1)" stroke="#8DD8BB" stroke-width="1.4"/><path d="M6 10.2l2.5 2.5 5-5.5" stroke="#8DD8BB" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Installs on your fascia, never under your shingles &mdash; so it won&rsquo;t void your roof warranty</li>
-        <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="rgba(255,255,255,0.1)" stroke="#8DD8BB" stroke-width="1.4"/><path d="M6 10.2l2.5 2.5 5-5.5" stroke="#8DD8BB" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Exclusive savings and financing available only through our partner network</li>
+        <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" fill="rgba(255,255,255,0.1)" stroke="#8DD8BB" stroke-width="1.4"/><path d="M6 10.2l2.5 2.5 5-5.5" stroke="#8DD8BB" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Exclusive savings and financing available only through Affordable Home</li>
       </ul>
+    </div>
+    <div class="partner-cta">
+      <a class="final-cta-btn" href="#top">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><line x1="8" y1="13" x2="8" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><polyline points="4,7 8,3 12,7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Check My Zip Code
+      </a>
     </div>
   </div>
 </section>
