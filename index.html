@@ -55,22 +55,21 @@
     margin:0 auto;
     padding:0 20px;
     display:flex;
-    justify-content:space-between;
+    justify-content:flex-start;
     align-items:center;
-    gap:16px;
+    gap:14px;
   }
-  .site-logo-affordable{height:30px; width:auto; display:block;}
-  .site-leafguard-group{display:flex; flex-direction:column; align-items:center;}
-  .site-logo-leafguard{height:22px; width:auto; display:block;}
-  .site-leafguard-caption{
-    margin-top:3px;
-    color:#1AB277;
-    font-weight:700;
-    font-size:0.68rem;
-    letter-spacing:0.04em;
-    text-transform:uppercase;
+  .site-logo-leafguard{height:26px; width:auto; display:block; flex:none;}
+  .site-header-divider{width:1px; height:30px; background:var(--grey); flex:none;}
+  .site-brought-by{display:flex; flex-direction:column; gap:2px; flex:none;}
+  .site-brought-by-label{
+    color:var(--ink-soft);
+    font-weight:600;
+    font-size:0.58rem;
+    letter-spacing:0.02em;
     white-space:nowrap;
   }
+  .site-logo-affordable{height:15px; width:auto; display:block;}
   .promo-bar{
     background:var(--royal-dark);
     color:var(--white);
@@ -246,9 +245,11 @@
     .hero-bullets li{font-size:1.45rem;}
     .hero-bullets li svg{width:26px; height:26px;}
     .hero-subnote{display:none;}
-    .site-logo-affordable{height:40px;}
-    .site-logo-leafguard{height:30px;}
-    .site-leafguard-caption{font-size:0.78rem;}
+    .site-header-inner{gap:20px;}
+    .site-logo-leafguard{height:34px;}
+    .site-header-divider{height:38px;}
+    .site-brought-by-label{font-size:0.7rem;}
+    .site-logo-affordable{height:19px;}
     .form-wrap{margin-top:0;}
     .quote-card{max-width:600px;}
   }
@@ -285,10 +286,12 @@
   .partner-section{background:var(--royal-dark); padding:60px 0;}
   .partner-grid{display:flex; flex-direction:column; align-items:center;}
   .partner-copy{display:contents;}
-  .partner-logo-group{order:1; display:flex; align-items:center; justify-content:center; gap:12px; margin-bottom:32px;}
-  .partner-logo-group .logo-affordable{height:22px; width:auto; display:block;}
-  .partner-logo-group .logo-divider{width:1px; height:26px; background:rgba(255,255,255,0.25); flex:none;}
-  .partner-logo-group .logo-leafguard{height:26px; width:auto; display:block;}
+  .partner-logo-group{order:1; display:flex; align-items:center; justify-content:center; gap:14px; margin-bottom:32px;}
+  .partner-logo-group .logo-leafguard{height:30px; width:auto; display:block; flex:none;}
+  .partner-logo-group .logo-divider{width:1px; height:34px; background:rgba(255,255,255,0.25); flex:none;}
+  .partner-logo-group .partner-brought-by{display:flex; flex-direction:column; gap:2px; flex:none;}
+  .partner-logo-group .partner-brought-by-label{color:rgba(255,255,255,0.65); font-weight:600; font-size:0.62rem; letter-spacing:0.02em; white-space:nowrap;}
+  .partner-logo-group .logo-affordable{height:16px; width:auto; display:block;}
   .partner-copy h2{order:2; color:var(--white); font-size:clamp(1.75rem, 3.4vw, 2.2rem); max-width:520px; text-align:center; margin-left:auto; margin-right:auto;}
   .partner-h2-desktop{display:none;}
   .partner-cta{display:block; text-align:center; margin-top:32px;}
@@ -359,9 +362,11 @@
   .partner-list li svg{flex:none; width:20px; height:20px; margin-top:2px;}
   @media (min-width:900px){
     .partner-grid{max-width:1000px; margin:0 auto;}
-    .partner-logo-group .logo-affordable{height:30px;}
-    .partner-logo-group .logo-divider{height:36px;}
-    .partner-logo-group .logo-leafguard{height:34px;}
+    .partner-logo-group{gap:20px;}
+    .partner-logo-group .logo-leafguard{height:38px;}
+    .partner-logo-group .logo-divider{height:44px;}
+    .partner-logo-group .partner-brought-by-label{font-size:0.75rem;}
+    .partner-logo-group .logo-affordable{height:20px;}
     .partner-copy h2{font-size:clamp(2.3rem, 2.8vw, 2.9rem); max-width:640px;}
     .partner-h2-mobile{display:none;}
     .partner-h2-desktop{display:inline;}
@@ -467,10 +472,11 @@
 
 <header class="site-header">
   <div class="site-header-inner">
-    <img src="img/logo-affordable-home.svg" alt="Affordable Home" class="site-logo-affordable" />
-    <div class="site-leafguard-group">
-      <img src="img/logo-leafguard.svg" alt="Leafguard" class="site-logo-leafguard" />
-      <span class="site-leafguard-caption">Official Partner</span>
+    <img src="img/leafguard-dark.svg" alt="Leafguard" class="site-logo-leafguard" />
+    <span class="site-header-divider"></span>
+    <div class="site-brought-by">
+      <span class="site-brought-by-label">Brought to you by</span>
+      <img src="img/logo-affordable-home.svg" alt="Affordable Home" class="site-logo-affordable" />
     </div>
   </div>
 </header>
@@ -635,9 +641,12 @@
     <div class="partner-grid">
       <div class="partner-copy">
         <div class="partner-logo-group">
-          <img src="img/logo-affordable-home-white.svg" alt="Affordable Home" class="logo-affordable" />
-          <span class="logo-divider"></span>
           <img src="img/logo-leafguard-white.svg" alt="Leafguard" class="logo-leafguard" />
+          <span class="logo-divider"></span>
+          <div class="partner-brought-by">
+            <span class="partner-brought-by-label">Brought to you by</span>
+            <img src="img/logo-affordable-home-white.svg" alt="Affordable Home" class="logo-affordable" />
+          </div>
         </div>
         <h2><span class="partner-h2-mobile">Why We Partnered With Leafguard</span><span class="partner-h2-desktop">Why We Partnered With Leafguard Gutters</span></h2>
         <div class="partner-offer">
